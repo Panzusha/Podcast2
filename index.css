@@ -1,0 +1,156 @@
+/* Code ultra secret pour police responsive */
+
+:root {
+    --step--2: clamp(0.6944rem, 0.6855rem + 0.0446vw, 0.72rem);
+    --step--1: clamp(0.8331rem, 0.8099rem + 0.1163vw, 0.9rem);
+    --step-0: clamp(1rem, 0.9565rem + 0.2174vw, 1.125rem);
+    --step-1: clamp(1.2rem, 1.1283rem + 0.3587vw, 1.4063rem);
+    --step-2: clamp(1.44rem, 1.3293rem + 0.5533vw, 1.7581rem);
+    --step-3: clamp(1.7281rem, 1.5649rem + 0.8163vw, 2.1975rem);
+    --step-4: clamp(2.0738rem, 1.8396rem + 1.1707vw, 2.7469rem);
+    --step-5: clamp(2.4881rem, 2.1594rem + 1.6435vw, 3.4331rem);
+    }
+
+/* Général */
+
+@font-face {
+    font-family: Cyber;
+    src: url(/Ressources/Cyberverse.otf)
+}
+
+* {
+    font-family: Cyber;
+}
+
+body {
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: black;
+}
+
+p {
+    font-size: var(--step-1);
+    color: #7a04eb;
+}
+
+a {
+    text-decoration: none;
+}
+
+#titre {
+    background: rgb(235,13,13);
+    background: linear-gradient(83deg, rgba(235,13,13,1) 0%, rgba(211,216,12,1) 25%, rgba(64,230,12,1) 50%, rgba(38,10,139,1) 77%, rgba(233,9,221,1) 98%);
+    font-size: var(--step-5);
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* Divs Podcasts */
+
+.ecouter {
+    display: flex;
+    align-items: center;
+}
+
+.pod {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    border: solid black 1px;
+    border-radius: 15px;
+    padding-left: 20px;
+}
+
+.titre {
+    background: -webkit-linear-gradient(0deg, #f05f0b 0%, rgba(191,187,67,1) 3%, #50e70b 7%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: var(--step-3);
+}
+
+.date {
+    color: #fe75fe;
+    font-size: var(--step-1);
+}
+
+/* boutons lecture */
+#play1 {
+    height: 20px;
+    width: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+#play2 {
+    height: 20px;
+    width: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+#play3 {
+    height: 20px;
+    width: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+#play4 {
+    height: 20px;
+    width: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+#play5 {
+    height: 20px;
+    width: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+#play6 {
+    height: 20px;
+    width: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+#play7 {
+    height: 20px;
+    width: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+#play8 {
+    height: 20px;
+    width: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+#play9 {
+    height: 20px;
+    width: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+#play10 {
+    height: 20px;
+    width: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.BTNecouter {
+    cursor: pointer;
+    color: #ff124f;
+}
+
+@media (max-width: 800px) {
+    body {
+        margin-left: 10px;
+        width: 90%
+    }
+}

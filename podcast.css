@@ -1,0 +1,62 @@
+:root {
+    --step--2: clamp(0.6944rem, 0.6855rem + 0.0446vw, 0.72rem);
+    --step--1: clamp(0.8331rem, 0.8099rem + 0.1163vw, 0.9rem);
+    --step-0: clamp(1rem, 0.9565rem + 0.2174vw, 1.125rem);
+    --step-1: clamp(1.2rem, 1.1283rem + 0.3587vw, 1.4063rem);
+    --step-2: clamp(1.44rem, 1.3293rem + 0.5533vw, 1.7581rem);
+    --step-3: clamp(1.7281rem, 1.5649rem + 0.8163vw, 2.1975rem);
+    --step-4: clamp(2.0738rem, 1.8396rem + 1.1707vw, 2.7469rem);
+    --step-5: clamp(2.4881rem, 2.1594rem + 1.6435vw, 3.4331rem);
+    }
+
+body {
+    background-image: url("/Ressources/nightsky.jpg");
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+@font-face {
+    font-family: Cyber;
+    src: url(/Ressources/Cyberverse.otf)
+}
+
+* {
+    font-family: Cyber;
+}
+
+h1 {
+    background: -webkit-linear-gradient(129deg, #ee0d37 55%, rgba(210,46,200,1) 63%, rgba(138,79,185,1) 71%, rgba(20,203,227,1) 79%, rgba(43,229,26,1) 88%, #ffe750 97%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: var(--step-5);
+}
+
+#date {
+    color: aqua;
+    font-size: var(--step-2);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#titre {
+    background: -webkit-linear-gradient(129deg, #ee0d37 55%, rgba(210,46,200,1) 63%, rgba(138,79,185,1) 71%, rgba(20,203,227,1) 79%, rgba(43,229,26,1) 88%, #ffe750 97%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: var(--step-3);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#texte {
+    color: #fe75fe;
+    font-size: var(--step-2);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 800px) {
+    body {
+        margin-left: 10px;
+        width: 90%
+    }
+}

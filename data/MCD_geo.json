@@ -1,0 +1,25 @@
+{
+  "width": 325,
+  "height": 281,
+  "cx": [
+    [ "PODCASTS", 60 ],
+    [ "HAS", 167 ],
+    [ "CATEGORIES", 267 ],
+    [ "COMMENTS", 60 ],
+    [ "OWNS", 167 ]
+  ],
+  "cy": [
+    [ "PODCASTS", 77 ],
+    [ "HAS", 77 ],
+    [ "CATEGORIES", 77 ],
+    [ "COMMENTS", 221 ],
+    [ "OWNS", 221 ]
+  ],
+  "shift": [
+    [ "HAS,PODCASTS,0", 0 ],
+    [ "HAS,CATEGORIES,0", 0 ],
+    [ "OWNS,PODCASTS,0", 0 ],
+    [ "OWNS,COMMENTS,0", 0 ]
+  ],
+  "ratio": []
+}

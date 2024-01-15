@@ -1,0 +1,9 @@
+body {
+    background-image: url(./Ressources/pepeClown.jpg);
+}
+
+h1 {
+    color: white;
+    font-size: 150px;
+    margin-top: 10px;
+}
