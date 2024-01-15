@@ -72,7 +72,7 @@ function getCategories() {
     -- WHERE posts.id = 6
     ');
 
-    $join1 = $query -> fetch();
+    $join1 = $query -> fetchAll();
     return $join1;
 }
 
@@ -87,7 +87,7 @@ function getCategorie() {
     -- WHERE posts.id = 6
     ');
 
-    $join2 = $query -> fetch();
+    $join2 = $query -> fetchAll();
     return $join2;
 }
 
