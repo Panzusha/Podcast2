@@ -8,6 +8,8 @@ $pdo = getPDO('mysql:host=localhost;dbname=podcast', 'root', '');
 
 $podcasts = getPodcasts($pdo);
 
+$join1 = getCategories();
+
 ?>
 
 <!DOCTYPE html>
@@ -26,6 +28,7 @@ $podcasts = getPodcasts($pdo);
     <?php foreach ($podcasts as $podcast): ?>
     <div class="pod">
         <!-- balises php intercalées dans le html pour remplir le contenu en dynamique via le tableau -->
+        <p class="categorie"><?=$join1['podCats']?></p>
         <p class="date"><?php echo $podcast['updated_at']; ?></p>
         <a href="podcast.php?id=<?=$podcast['id']?>"><h3 class="titre"><?php echo $podcast['name']; ?></h3></a>
         <p><?php echo $podcast['descri']; ?></p>

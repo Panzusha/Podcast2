@@ -5,6 +5,8 @@ $podcast = getPodcast();
 $createcom = createComments();
 $getcom = getComments();
 
+$join2 = getCategorie();
+
 ?>
 
 <!DOCTYPE html>
@@ -25,6 +27,11 @@ $getcom = getComments();
     <!-- si l'id est bonne on charge la page -->
 <div id="titreP">
         <h1>CYBER PUNKCAST 2077</h1>
+    </div>
+    <div id="categorie">
+        <?php
+            echo $join2['podCat'];
+        ?>
     </div>
     <div id="date">
         <!-- on rempli les div en dynamique avec les valeurs du tableau chopées par $_GET ID -->

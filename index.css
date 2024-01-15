@@ -60,6 +60,13 @@ a {
     padding-left: 20px;
 }
 
+.categorie {
+    font-size: (--step-2);
+    background: -webkit-linear-gradient(0deg, #f05f0b 0%, rgba(191,187,67,1) 3%, #50e70b 7%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .titre {
     background: -webkit-linear-gradient(0deg, #f05f0b 0%, rgba(191,187,67,1) 3%, #50e70b 7%);
     -webkit-background-clip: text;

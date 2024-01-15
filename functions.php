@@ -62,5 +62,33 @@ function getComments() {
     return $podcasts;
 }
 
+// page index
+function getCategories() {
+
+    $pdo = getPDO('mysql:host=localhost;dbname=podcast', 'root', '');
+    $query = $pdo->query('SELECT podcasts.category_id AS podCats
+    FROM podcasts 
+    LEFT JOIN categories ON podcasts.category_id = categories.id
+    -- WHERE posts.id = 6
+    ');
+
+    $join1 = $query -> fetch();
+    return $join1;
+}
+
+
+// page podcast
+function getCategorie() {
+
+    $pdo = getPDO('mysql:host=localhost;dbname=podcast', 'root', '');
+    $query = $pdo->query('SELECT podcasts.category_id AS podCat
+    FROM podcasts
+    LEFT JOIN categories ON podcasts.category_id = categories.id
+    -- WHERE posts.id = 6
+    ');
+
+    $join2 = $query -> fetch();
+    return $join2;
+}
 
 ?>
