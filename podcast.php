@@ -2,6 +2,8 @@
 
 include "functions.php";
 $podcast = getPodcast();
+$createcom = createComments();
+$getcom = getComments();
 
 ?>
 
@@ -45,12 +47,27 @@ $podcast = getPodcast();
             echo $podcast['descri'];
         ?>
     </div>
+    <form action="" method="post" style="display: inline-flex; flex-direction: column">
+        <label for="body">Commentaire</label>
+        <textarea name="content" id="body" cols="30" rows="10"></textarea>
+        <input type="submit" value="Publier">
+    </form>
         <!-- sinon on envoie sur page 404 customisée avec header -->
     <?php
     //} else {
-      //  header('location: http://php-basics.test/notfound.html');
+    //  header('location: http://php-basics.test/notfound.html');
     // }
+    foreach ($getcom as $comment): 
+    
     ?>
+
+    <div id="comms">
+        <p><?= $comment['created_at'] ?></p>
+        <p><?= $comment['content'] ?></p>
+    </div>
+
+
+    <?php endforeach; ?>
     
 </body>
 </html>
